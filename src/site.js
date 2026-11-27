@@ -1,14 +1,13 @@
 /**
- * Site-wide constants.
- *
- * TODO (plan.md §6.3 — "Add Your Real Assets"):
- * Replace the WhatsApp number below with your real number (country code + number,
- * no +, no spaces). The current value mirrors the placeholder shown in the Stitch
- * export's footer: +91 98765 43210.
+ * Site-wide contact details.
+ * WHATSAPP_NUMBER: country code + number, no + or spaces (all wa.me CTAs build from it).
  */
-export const WHATSAPP_NUMBER = '919876543210';
-export const PHONE_DISPLAY = '+91 98765 43210';
-export const EMAIL = 'contact@arsstudios.in';
+export const WHATSAPP_NUMBER = '917091241322';
+export const PHONE_DISPLAY = '+91 70912 41322';
+export const EMAIL = 'aryankumar.170911@gmail.com';
+
+/** Resolves a public/ asset against Vite's base — works on GH Pages subpaths too. */
+export const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 
 /** Builds a wa.me deep link with a pre-filled Hinglish/English message. */
 export function wa(message) {

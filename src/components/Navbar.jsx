@@ -1,6 +1,6 @@
 import Icon from './Icon.jsx';
 import { scrollToTarget } from '../motion.js';
-import { wa, MSG } from '../site.js';
+import { wa, MSG, asset } from '../site.js';
 
 const LINKS = [
   { label: 'Services', href: '#services' },
@@ -26,7 +26,7 @@ export default function Navbar() {
           className="shrink-0"
         >
           <img
-            src="/assets/ars-studios-logo.png"
+            src={asset('assets/ars-studios-logo.png')}
             alt="ARS Studios"
             className="h-[34px] w-auto mix-blend-multiply md:h-[42px]"
             width="480"

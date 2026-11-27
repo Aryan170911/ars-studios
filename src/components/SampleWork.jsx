@@ -1,8 +1,9 @@
 import { useReveal } from '../motion.js';
+import { asset } from '../site.js';
 
 const PROJECTS = [
   {
-    img: '/assets/work-coaching.jpg',
+    img: asset('assets/work-coaching.jpg'),
     alt: 'Editorial mobile app interface design mockup for a premier coaching institute in Patna',
     locality: 'Bazar Samiti',
     title: 'Patna Coaching Institute',
@@ -10,7 +11,7 @@ const PROJECTS = [
     tags: ['Mobile Website', 'WhatsApp Leads', 'Education'],
   },
   {
-    img: '/assets/work-clinic.jpg',
+    img: asset('assets/work-clinic.jpg'),
     alt: 'Clean clinical mobile healthcare landing page for dental and medical practice in Boring Road Patna',
     locality: 'Boring Road',
     title: 'Dental & Health Clinic',
@@ -18,7 +19,7 @@ const PROJECTS = [
     tags: ['Web Design', 'Google Maps', 'Healthcare'],
   },
   {
-    img: '/assets/work-gym.jpg',
+    img: asset('assets/work-gym.jpg'),
     alt: 'Bold fitness gym landing page UI on smartphone screen for modern workout studio in Kankarbagh Patna',
     locality: 'Kankarbagh',
     title: 'Local Gym & Fitness Club',

@@ -54,7 +54,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-2 border-t border-slate-700/50 pt-space-md">
             <span className="text-label-sm-mobile font-semibold uppercase tracking-widest text-inverse-primary md:text-label-sm">
-              ARS Studios • Patna, Bihar
+              ARS Studios • Khemnichak, Patna, Bihar
             </span>
             <span className="text-[12px] text-slate-400">
               Boring Road • Kankarbagh • Bazar Samiti • Bailey Road

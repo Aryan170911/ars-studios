@@ -26,20 +26,19 @@ npm run build   # outputs static site to dist/
 npm run preview # serve the production build locally
 ```
 
-## Configure contact details before launch
+## Contact details
 
 All WhatsApp CTAs are deep links built in `src/site.js`:
 
-- `WHATSAPP_NUMBER` — country code + number, no `+` or spaces (e.g. `919876543210`)
+- `WHATSAPP_NUMBER` — country code + number, no `+` or spaces
 - `PHONE_DISPLAY`, `EMAIL` — shown in the footer
-
-Placeholders still to replace: `[Your WhatsApp Number]`, `[Your Email]`,
-`[Your Patna Locality]`.
+- Locality line — footer bottom strip in `src/components/Footer.jsx`
 
 ## Deploy
 
-The build is a fully static site — deploy `dist/` anywhere. On Cloudflare Pages:
+Pushes to `main` build and publish automatically via **GitHub Actions → GitHub
+Pages** (`.github/workflows/deploy.yml`).
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- No environment variables required (contact details are compiled in).
+The build is fully static, so `dist/` also deploys anywhere else (e.g. Cloudflare
+Pages: build command `npm run build`, output directory `dist`). No environment
+variables are required — contact details are compiled in.
